@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 import { HERO_CONTENT } from "@/lib/content";
 
@@ -60,19 +61,13 @@ export default function Hero() {
             <div className="relative w-72 h-72 md:w-96 md:h-96">
               {/* Photo frame */}
               <div className="w-full h-full rounded-[2rem] bg-amber-light/60 border-2 border-amber-light overflow-hidden shadow-xl shadow-amber-brand/10">
-                {/* Replace src with actual headshot: public/chinmai-headshot.jpg */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="text-center text-warmgray">
-                    <div className="w-24 h-24 rounded-full bg-amber-light/80 mx-auto mb-3 flex items-center justify-center">
-                      <span className="font-heading text-3xl text-amber-brand font-semibold">CS</span>
-                    </div>
-                    <p className="text-sm font-body text-warmgray/70">
-                      Add photo to
-                      <br />
-                      public/chinmai-headshot.jpg
-                    </p>
-                  </div>
-                </div>
+                <Image
+                  src="/chinmai-headshot.jpg"
+                  alt="Chinmai Swamy"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
               </div>
 
               {/* Decorative dot */}
