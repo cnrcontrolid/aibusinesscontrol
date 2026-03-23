@@ -4,9 +4,9 @@ import type { Service, SpeakingTopic, Testimonial, Stat } from "@/types";
 
 export const HERO_CONTENT = {
   eyebrow: "AI Consultant + Keynote Speaker",
-  headline: "I help businesses stop being afraid of AI — and start using it like they mean it.",
+  headline: "Turn Your Existing Skills Into an Online Business — and Travel the World With Your Family.",
   subheadline:
-    "Helping leaders make sense of the AI moment — practically, honestly, and without the hype.",
+    "You already have what it takes. I'll show you how to package your talents, build an income online, and design a life with no borders.",
   primaryCta: { label: "Book a Call", href: "#contact" },
   secondaryCta: { label: "See What I Do", href: "#services" },
 };
@@ -131,6 +131,17 @@ export const TESTIMONIALS: Testimonial[] = [
     avatarInitials: "PM",
   },
 ];
+
+// ─── Lead Capture ─────────────────────────────────────────────────────────────
+
+export const LEAD_CAPTURE_CONTENT = {
+  eyebrow: "Free Guide",
+  headline: "Ready to build a business around your life?",
+  subheadline:
+    "Drop your name and email and I'll send you my free guide: 5 Steps to Turning Your Skills Into an Online Business That Travels With You.",
+  ctaLabel: "Send Me the Guide",
+  successMessage: "You're in! Check your inbox shortly.",
+};
 
 // ─── Contact ──────────────────────────────────────────────────────────────────
 
