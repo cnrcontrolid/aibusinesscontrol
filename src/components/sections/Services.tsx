@@ -1,17 +1,17 @@
-import { Compass, BookOpen, Users } from "lucide-react";
+import { Compass, BookOpen, Users, type LucideIcon } from "lucide-react";
 import { SERVICES } from "@/lib/content";
 import SectionHeader from "@/components/ui/SectionHeader";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import type { Service } from "@/types";
 
-const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+const ICON_MAP: Record<string, LucideIcon> = {
   Compass,
   BookOpen,
   Users,
 };
 
 function ServiceCard({ service, index }: { service: Service; index: number }) {
-  const Icon = ICON_MAP[service.icon] ?? Compass;
+  const Icon: LucideIcon = ICON_MAP[service.icon] ?? Compass;
 
   return (
     <AnimatedSection delay={index * 120}>
